@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+    <style>
+      .card {
+        display: block;
+        width: 233px;
+        padding: 20px;
+        border-radius: 15px;
+        text-decoration: none;
+        color: white;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+      }
+
+      .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1
+        style="
+          font-size: 36px;
+          color: #1f2937;
+          margin-bottom: 12px;
+          font-weight: 700;
+          font-family: 'Arial', sans-serif;
+          letter-spacing: 1px;
+          text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        "
+      >
+        Student Management
+      </h1>
+
+      <p
+        style="
+          font-size: 18px;
+          color: #4b5563;
+          line-height: 1.6;
+          margin-bottom: 40px;
+          font-family: 'Arial', sans-serif;
+        "
+      >
+        Manage system administrators and their permissions efficiently and
+        effortlessly.
+      </p>
+      <div
+        style="display: flex; gap: 70px; flex-wrap: wrap; margin-left: 343px"
+      >
+        <a href="campuses.html" class="card" style="background-color: gold">
+          <h2>Campuses</h2>
+          <p>Manage all campuses</p>
+        </a>
+        <a
+          href="show.html"
+          class="card"
+          style="background-color: chartreuse"
+        >
+          <h1>admins</h1>
+          <p>
+            Manage all programs in your institution efficiently and
+            effortlessly.
+          </p>
+        </a>
+
+        <a href="program.html" class="card" style="background-color: brown">
+          <h1>programs</h1>
+          <p>
+            Manage all programs in your institution efficiently and
+            effortlessly.
+          </p>
+        </a>
+        <a href="student.html" class="card" style="background-color: pink">
+          <h1>students</h1>
+          <p>
+            Manage all students in your institution efficiently and
+            effortlessly.
+          </p>
+        </a>
+        <a href="programs.html" class="card" style="background-color: green">
+          <h1>classes</h1>
+          <p>
+            Manage all classes in your institution efficiently and effortlessly.
+          </p>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>

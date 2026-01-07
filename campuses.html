@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>campuses</h1>
+    <input type="text" id="input" />
+    <button onclick="addcom()">add new campuss</button>
+    <div
+      id="value"
+      style="
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        margin-top: 30px;
+        justify-content: center;
+      "
+    ></div>
+    <script>
+      function addcom() {
+        var inputValue = document.getElementById("input").value;
+        if (inputValue == "") {
+          alert("write compass");
+          return;
+        }
+
+        var vlu = document.getElementById("value");
+        vlu.innerHTML +=
+          `      <div style="
+        width:200px;
+        padding:15px;
+        background:#ffffff;
+        color: green
+        border-radius:10px;
+        box-shadow:0 4px 10px rgba(0,0,0,0.1);
+        text-align:center;
+        font-weight:bold;
+      ">
+
+      
+      ` +
+          inputValue +
+          "<br>" +
+          `<div style=""><button onclick="Delete()">Delete</button></div>`;
+        document.getElementById("input").value = "";
+
+        function Delete() {
+          document.getElementById("value").innerHTML = "";
+        }
+      }
+    </script>
+  </body>
+</html>
